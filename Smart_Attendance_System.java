@@ -33,9 +33,14 @@ class Student {
 
         int choice;
         do {
-            System.out.println("\n1.View 2.MarkAll 3.MarkOne 4.Summary 0.Exit");
+            System.out.println("\n Attendance Menu:");
+            System.out.println("1.View ");
+            System.out.println("2.MarkAll");
+            System.out.println("3.MarkOne");
+            System.out.println("4.Summary");
+            System.out.println("5.Exit");
             System.out.print("Choice: ");
-            choice = sc.nextInt();
+            int choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
@@ -119,7 +124,7 @@ class Student {
                     System.out.println("Total: 5 | Present: " + p + " | Absent: " + absent);
                     break;
             }
-        } while (choice != 0);
+        } while (choice != 5);
         
         sc.close();
     }
